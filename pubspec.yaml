@@ -6,7 +6,7 @@ repository: https://github.com/RootSoft/algorand-dart
 issue_tracker: https://github.com/RootSoft/algorand-dart/issues
 
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: ">=3.6.0 <4.0.0"
 
 dependencies:
   # Ed25519
@@ -34,26 +34,29 @@ dependencies:
   collection: ^1.17.0
 
   # HTTP & REST
-  dio: ^4.0.6
-  retrofit: ^3.3.1
+  dio: ^5.8.0+1
+  retrofit: ^4.4.2
 
   # Messagepack
   algorand_msgpack: ^1.0.1
 
-  algorand_json: ^0.0.1
+  algorand_json: ^0.0.2
 
 dev_dependencies:
   # Testing framework
-  test: ^1.23.1
+  test: ^1.25.15
 
   # Build Runner & Source Generation
-  build_runner: '>2.3.0 <4.0.0'
+  build_runner: ^2.4.15
 
   # Linter
-  pedantic: ^1.11.0
+  lints: ^2.1.0
 
   # JSON Serialization
-  json_serializable: ^6.6.1
+  json_serializable: ^6.8.0
 
   # Retrofit
-  retrofit_generator: ^4.2.0
+  retrofit_generator: ^9.1.9
+
+dependency_overrides:
+  dio: ^5.8.0+1
